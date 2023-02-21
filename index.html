@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+        <header>
+<div class="navBar">
+    <div class="navBar__logoThumb">
+    <img class="logo" src="./Images/Логотип.jpeg" alt="logo">
+    <div class="burgerMenu"></div>   
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">   
+    <span class="close">&times;</span>
+    <p class="modal__description--text">Залиште ваші данні і ми вам зателефонуємо для оформлення заявки.</p>
+    <form id="form" class="modal__form" action="/action_page.php" method="post">
+        <label for="name"><span class="label__name">Ім'я:</span></label><br>
+        <input type="text" id="name" name="name" placeholder="Ім'я" class="input__text _req" >
+        <label for="telephone"><span class="label__telephone">Телефон:</span></label><br>
+        <input type="tel" id="telephone" name="telephone" placeholder="(097)123-12-32" class="input__tel _req _tel" >
+        <div class="checkbox">
+            <input class="checkbox__input _req" type="checkbox" checked name="agreement">
+            <label class="checkbox__text"  for="formAgreement"><span>Я надаю свою згоду на обробку персональних данних згідно <a class="checkbox__link" href="https://zakon.rada.gov.ua/laws/show/z0152-23#n14">умов.</a> </span></label>
+        </div>
+        
+    </form>
+    <button class="modal__button"  type="submit">Відправити</button>
+  </div>
+
+</div>
+<div>
+    <img class="mainPhoto" src="./Images/2.jpeg" alt="main photo">
+</div>
+        </header>
+        <main>
+            <div class="mainButtonThumb">
+                <button id="myBtn" class="mainButton" type="button">Замовити консультацію</button>
+            </div>
+            <div class="infoThumb">
+             <h2 class="infoThumb__title">Цікаво дізнатися</h2>
+             <p class="infoThumb__text">Мікрогрін або мікрозелень  досить новий вид зелені  на ринку України. 
+                Мікрогрін являє собою початкові паростки улюблених видів смачної та звичної зелені, які можна виростити в домашніх умовах протягом 7-10 днів.
+                Вже за тиждень ви матимете смачне доповнення для своїх улюблених страв не доклавши значних зусиль. Нині в Україні є велика кількість різновидів мікрогріну. 
+                Вирощувати мікрогрін можливо використавши насіння різних рослин таких як : базилік, цибуля, горох, гірчиця, рукола та інші.
+            </p>
+</div>
+<div class="mainProductsThumb">
+<h2 class="component__title">Наші набори:</h2>
+<ul>
+  <li class="productCard">
+      <img class="productCard__image" src="./Images/7.jpeg" alt="prduct 1">
+      <div class="productCard__bottomThumb">
+      <p class="productCard__description">(Базилік, рукола, крес-салат, броколі, кінза,<br> люцерна, кріп, петрушка) </p>
+      <p class="productCard__price"><b>Ціна: 349 грн</b></p>
+      <button id="myBtn" class="productCard__button buy_button--1" type="button">Придбати</button>
+      </div>
+    </li>
+  <li class="productCard">
+      <img class="productCard__image" src="./Images/8.jpeg" alt="prduct 2">
+      <div class="productCard__bottomThumb">
+      <p class="productCard__description">(Базилік, рукола)</p>
+      <p class="productCard__price"><b>Ціна: 199 грн</b></p>
+      <button id="myBtn" class="productCard__button buy_button--2" type="button">Придбати</button>
+      </div>
+    </li>
+  <li class="productCard">
+      <img class="productCard__image" src="./Images/9.jpeg" alt="prduct 3">
+      <div class="productCard__bottomThumb">
+      <p class="productCard__description">(Крес-салат, кінза)</p>
+      <p class="productCard__price"><b>Ціна: 199 грн</b></p>
+      <button id="myBtn" class="productCard__button buy_button--3" type="button">Придбати</button>
+      </div>
+    </li>
+  <li class="productCard">
+      <img class="productCard__image" src="./Images/10.jpeg" alt="prduct 4">
+      <div class="productCard__bottomThumb">
+      <p class="productCard__description">(Люцерна, броколі)</p>
+      <p class="productCard__price"><b>Ціна: 199 грн</b></p>
+      <button id="myBtn" class="productCard__button buy_button--4" type="button">Придбати</button>
+      </div>
+    </li>
+  <li class="productCard">
+      <img class="productCard__image" src="./Images/11.jpeg" alt="prduct 5">
+      <div class="productCard__bottomThumb">
+      <p class="productCard__description">(Кріп, петрушка)</p>
+      <p class="productCard__price"><b>Ціна: 199 грн</b></p>
+      <button id="myBtn" class="productCard__button buy_button--5" type="button">Придбати</button>
+      </div>
+    </li>
+    </ul>
+  <div class="mainButtonThumb">
+                <button id="myBtn" class="mainButton2" type="button">Замовити консультацію</button>
+            </div>  
+  </div>
+  </div>
+
+
+<div class="video__thumb">
+    <h2 class="component__title">Вирощування мікрогріну:</h2>
+    <iframe class="video" width="100%" height="315" src="https://www.youtube.com/embed/ZFHoUF9xEik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+  <div class="reviews__mainThumb">
+      <h2 class="component__title">Ваші відгуки:</h2>
+      <ul class="reviews__thumb">
+          <li class="reviews">
+              <img class="reviews__image" src="https://static.103.by/images/common/wysiwyg/2018/02/185c196fd9743fce178b25bd5023eca5.png" alt="відгук 1">
+              <h2 class="reviews__name">Надія</h2>
+          </li>
+          <p class="reviews__text">"Постійно купую на цьому сайті.Ввічливі консултльтанти.Рекомендую всім!"</p>
+
+          <li class="reviews">
+              <img class="reviews__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd1ftes2rlIdbmVDk_8KaIGLbfYk_JI6cl9HZCK9jsdfnVnSO8m-5Kdiy6fSC_kyme5bQ&usqp=CAU alt="відгук 1">
+              <h2 class="reviews__name">Олександра</h2>
+          </li>
+          <p class="reviews__text">"А знаєте, то зовсім не складна справа вирощувати мікрогрін вдома.Завдяки набору, в якому є все необхідне, це елементарно)))"</p>
+          <li class="reviews">
+              <img class="reviews__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF4Yxx4MZjGlqhxtEaagrYkT-gAwJ0rJJgBg&usqp=CAU" alt="відгук 1">
+              <h2 class="reviews__name">Іван</h2>
+          </li>
+          <p class="reviews__text">"Все круто!Вже давно вживаю мікрозелень та всім раджу."</p>
+          <li class="reviews">
+              <img class="reviews__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQzdFm3QIVh9LDMWJnMh9CmEzyZLmJTXCxYQ&usqp=CAU" alt="відгук 1">
+              <h2 class="reviews__name">Оксана</h2>
+          </li>
+          <p class="reviews__text">"Діти просто в захваті, і я також)Дякую сайту Green Energy!"</p>
+      </ul>
+  </div>
+        </main>
+        <footer>
+<div class="footer__Thumb">
+    <div class="footer__logoThumb">
+    <img class="logo" src="./Images/Логотип.jpeg" alt="logo">
+    <div class="footerButtonThumb">
+                <button id="myBtn" class="mainButton3" type="button">Замовити консультацію</button>
+            </div>   
+    </div>
+</div>
+
+        </footer>
+    </div>
+    <script src="./modal.js"></script>
+</body>
+</html>
