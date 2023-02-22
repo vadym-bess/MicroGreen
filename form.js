@@ -1,63 +1,26 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementsById("form");
+const form = document.querySelector("form");
 
-  form.addEventListener("submit", formSend);
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-  async function formSend(event) {
-    event.preventDefault();
+  const formData = new FormData(event.target);
+  const formProps = Object.fromEntries(formData);
+  console.log(formProps);
 
-    let error = formValidate(form);
-
-    if (error === 0) {
-    } else {
-      alert("Заповніть обов'язкові поля");
-    }
-  }
-
-  function formValidate(form) {
-    let error = 0;
-    let formReq = document.querySelectorAll("._req");
-
-    for (let index = 0; index < formReq.length; index++) {
-      const input = formReq[index];
-      formRemoveError(input);
-
-      if (input.classList.contains("_tel")) {
-        if (telCheck(input)) {
-          formAddError(input);
-          error++;
-        }
-      } else if (
-        input.getAttribute("type") === "checkbox" &&
-        input.checked === false
-      ) {
-        formAddError(input);
-        error++;
-      } else {
-        if (input.value === "") {
-          formAddError(input);
-          error++;
-        }
-      }
-    }
-    return error;
-  }
-
-  function formAddError(input) {
-    input.parentElement.classList.add("_error");
-    input.classList.add("_error");
-  }
-
-  function formRemoveError(input) {
-    input.parentElement.classList.remove("_error");
-    input.classList.remove("_error");
-  }
-
-  function telCheck(input) {
-    return /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/.test(
-      input.value
-    );
-  }
+  fetch(event.target.action, {
+    method: form.method,
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      window.alert("Дякуємо!Данні успішно передані!");
+      form.reset();
+    })
+    .catch((error) => {
+      window.alert("Сталася помилка!Данні не були передані!");
+    });
 });
