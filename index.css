@@ -351,7 +351,7 @@ body {
   align-items: center;
   border: 1px solid tra;
   background-color: #fff;
-  height: 600px;
+  height: 650px;
   width: 100%;
   border-radius: 8px;
   background-color: #5c821a;
@@ -402,14 +402,13 @@ body {
 }
 
 .modal__button {
-  margin-left: 45px;
+  margin-left: 43px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: transparent;
-
   width: 150px;
-  height: 35px;
+  height: 45px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
