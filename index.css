@@ -412,6 +412,10 @@ body {
   color: #fff;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
+.thanks__link {
+  text-decoration: none;
+  color: #fff;
+}
 
 .modal__description--text {
   color: #fff;

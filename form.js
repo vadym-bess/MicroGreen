@@ -17,7 +17,7 @@ form.addEventListener("submit", (event) => {
     },
   })
     .then((response) => {
-      window.alert("Дякуємо!Данні успішно передані!");
+      // window.alert("Дякуємо!Данні успішно передані!");
       form.reset();
     })
     .catch((error) => {
