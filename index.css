@@ -276,6 +276,7 @@ body {
 
 .component__title {
   margin-bottom: 10px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -295,6 +296,7 @@ body {
   margin-bottom: 20px;
   text-align: center;
   color: #fff;
+  list-style: none;
 }
 
 /* ---------------footer------------------------------- */
@@ -335,7 +337,7 @@ body {
 
 .modal__form {
   background-color: #5c821a;
-  width: 200px;
+  width: 220px;
   border: transparent;
 }
 
@@ -396,6 +398,7 @@ body {
 }
 
 .modal__button {
+  margin-left: 55px;
   display: block;
   border: transparent;
   padding: 15px;
@@ -408,7 +411,6 @@ body {
   font-weight: 600;
   color: #fff;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  margin-bottom: 20px;
 }
 
 .modal__description--text {
@@ -420,6 +422,7 @@ body {
 }
 
 .checkbox__text {
+  text-align: center;
   color: #fff;
   font-size: x-small;
   line-height: 0;
@@ -427,4 +430,17 @@ body {
 
 .checkbox__link {
   text-decoration: none;
+}
+
+.package__contains {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.package__contains--image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
